@@ -1,15 +1,16 @@
 specVersion: 0.0.2
-description: Indexing all Ethereum Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+description: Indexing all Fantom Opera Block data
+repository: https://github.com/HyperJump-DeFi/ftm-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: rinkeby
+    network: mainnet
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
+      address: "0xFA0c32A0C6B52F236b5e40B7339530C9CFE50FFe"
       abi: ConverterRegistryContract
+      startBlock: 3500000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
